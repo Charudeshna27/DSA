@@ -89,3 +89,17 @@ class Solution {
     }
 }
 
+/// postive number
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        HashSet s = new HashSet<>();
+        for (int num : nums) {
+           s.add(num);
+        }
+    int v=1;
+    while(s.contains(v)){
+        v++;
+    }
+    return v;     
+    }
+}
